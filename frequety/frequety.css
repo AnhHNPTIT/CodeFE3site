@@ -1,0 +1,157 @@
+@font-face {
+    font-family: abc;
+    src: url(./font/Quicksand-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: abc;
+}
+h1{
+    text-align: center;
+    font-size: 38px;
+    text-transform: uppercase;
+    width: 700px;
+    margin: auto;
+    padding-bottom: 10px;
+    color: #89705b;
+    font-weight: 800;
+
+}
+h1::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 140px;
+    background: #89705b;
+    top:70px;
+    left: 600px;
+    right: 0;
+    bottom: 0;
+}
+
+h3{
+    margin: auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    padding-top: 30px;
+    width: 550px;
+}
+.accordion{
+    width: 77.5%;
+    margin: auto;
+    margin-top: 40px;
+}
+.accordion-body strong{
+    font-weight: 400;
+    line-height: 40px;
+}
+.accordion-body{
+    height: 220px;
+}
+
+.collapsed{
+    font-weight: 600;
+    color: #89705b;
+}
+
+
+
+/* responsive */
+
+@media (min-width:991px) and (max-width:1200px ) {
+    .container__group-flex{
+        height: 47.5%;
+    }
+    .container__group-flex-item-img{
+        height: 40%;
+    }
+
+}
+
+
+
+@media (min-width:767px) and (max-width:992px) {
+    .container__group-flex{
+        height: 55%;
+      
+    }
+    .container__group-flex-item-img{
+        height: 40%;
+    }
+    .container__group-flex-item{
+        width: 27.5%;
+    }
+    .container__group{
+        width: 70%;
+    }
+    .view{
+        position: relative;
+        top:80px
+    }
+
+}
+
+
+
+
+@media (min-width:575px) and (max-width:768px ) {
+    .container__group-flex{
+        height: 62.5%;
+        
+    }
+    .container__group-flex-item-img{
+        height: 40%;
+    }
+    .container__group-flex-item{
+        width: 31%;
+    }
+    .view{
+        position: relative;
+        top:200px
+    }
+
+}
+
+
+
+
+@media(max-width:577px ) {
+    h3{
+        font-size: 16px;
+    }
+    .container__group-flex{
+        display: inline;
+    
+    }
+    .container__group-flex-item{
+        width: 100%;
+        height: 50%;
+    }
+    .container__group-flex-item{
+        height: 45%;
+        margin-bottom: 50px;
+    }
+    .view{
+        position: relative;
+        top:1650px
+    }
+    h1::before{
+        position: absolute;
+        content: "";
+        top:80px;
+        left:35%;
+        right: 0;
+        bottom: 0;
+    }
+    h1{
+        width: 70%;
+    }
+    #h3{
+        font-size: 15px;
+        width: 70%;
+    
+    }
+    
+}
